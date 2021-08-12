@@ -4,7 +4,9 @@
 			<el-row :gutter="20">
 				<el-col :span="8"></el-col>
 				<el-col :span="8"
-					><el-input
+					>
+					<img class="image" :src="url" />
+					<el-input
 						placeholder="Buscar Personaje..."
 						prefix-icon="el-icon-search"
 						v-model="search"
@@ -18,21 +20,26 @@
 </template>
 
 <script setup>
-	import { inject } from "vue"
+	import { inject, ref } from "vue"
 
 	const search = inject("search")
+	const url = ref("")
+	url.value = require("@/assets/rick and morty.png")
 
 </script>
 
 <style scoped>
-	.el-main {
-		background-image: url("../assets/rickandmorty.png");
-		background-position: center center;
+	.el-container {
+		background-image: url("../assets/portal-morty-smith-rick.png");
+		background-position: left top;
 		background-attachment: fixed;
 		background-size: cover;
 		height: 350px;
 		color: #fff;
 		text-align: center;
-		padding-top: 150px;
+		padding-top: 80px;
+	}
+	.image{
+		width: 350px;
 	}
 </style>
