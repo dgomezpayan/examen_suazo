@@ -44,6 +44,10 @@
 		z-index: 2;
 
 		background-image: url("../assets/portal-morty-smith-rick.png");
+
+		background-position: center center;
+		background-attachment: fixed;
+		background-size: cover;
 	}
 	.image {
 		position: absolute;
@@ -56,15 +60,15 @@
 		position: absolute;
 		width: 10vw;
 		height: 8vh;
-		left: 600px;
-		top: 150px;
+		left: 850px;
+		top: 190px;
 	}
 	.title {
 		position: absolute;
 		width: 872px;
 		height: 53px;
 		left: calc(50% - 872px / 2);
-		top: calc(50% - 53px / 2 + 115.5px);
+		top: calc(68%);
 
 		font-family: Montserrat;
 		font-style: normal;
@@ -73,14 +77,14 @@
 		line-height: 44px;
 		text-align: center;
 
-		color: #000000;
+		color: #ffffff;
 	}
 	p {
 		position: absolute;
 		width: 872px;
 		height: 62px;
 		left: calc(50% - 872px / 2);
-		top: calc(50% - 62px / 2 + 183px);
+		top: calc(72%);
 
 		font-family: Montserrat;
 		font-style: normal;
@@ -91,7 +95,7 @@
 
 		text-align: center;
 
-		color: #070505;
+		color: #ffffff;
 	}
 	.el-button {
 
@@ -101,8 +105,8 @@
 		font-size: 18px;
 		line-height: 22px;
 
-		align-items: center;
-		text-align: center;
+		/* align-items: center;
+		text-align: center; */
 
 		color: #ffffff;
 
@@ -120,8 +124,8 @@
 		position: absolute;
 		width: 120px;
 		height: 44px;
-		left: 660px;
-		top: 570px;
+		left: calc(50% - 80px);
+		top: 800px;
 
 		background: #11555f;
 	}

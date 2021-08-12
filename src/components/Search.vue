@@ -22,7 +22,8 @@
 <script setup>
 	import { inject, ref } from "vue"
 
-	const search = inject("search")
+	const search = inject('search')
+
 	const url = ref("")
 	url.value = require("@/assets/rick and morty.png")
 
